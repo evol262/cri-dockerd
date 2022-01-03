@@ -25,7 +25,7 @@ jobs:
           goarch: ${{ matrix.goarch }}
           project_path: "./src/"
           binary_name: "cri-dockerd"
-          build_flags: "CGO_ENABLED=0"
+          pre_command: "export CGO_ENABLED=0"
           extra_files: LICENSE Readme.md
 
   build-packages:
