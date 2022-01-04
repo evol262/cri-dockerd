@@ -97,7 +97,7 @@ jobs:
       - name: Upload binaries to release
         uses: AButler/upload-release-assets@v2.0
         with:
-          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
           files: pkg/*
           release-tag: ${{ github.ref }}
 
