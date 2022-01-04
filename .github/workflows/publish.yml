@@ -98,7 +98,7 @@ jobs:
         uses: AButler/upload-release-assets@v2.0
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
-          files: pkg/*
+          files: src/github.com/Mirantis/cri-dockerd/pkg/*
           release-tag: ${{ github.ref }}
 
       - name: Cleanup processes and containers
